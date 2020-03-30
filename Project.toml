@@ -1,0 +1,8 @@
+name = "CameraApp"
+uuid = "3cb4ef3c-5446-42e7-8576-8c21df91f6ca"
+authors = ["Satoshi Terasaki <terasakisatoshi.math@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+ImageInTerminal = "d8c32880-2388-543b-8c61-d9f865259254"
+VideoIO = "d6d074c3-1acf-5d4c-9a43-ef38773959a2"
