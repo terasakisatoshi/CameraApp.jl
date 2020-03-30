@@ -28,5 +28,20 @@ function demo()
     end
 end
 
+function real_main()
+    # Write julia logic what you want
+    demo()
+end
+
+function julia_main()
+    try
+        real_main()
+    catch
+        Base.invokelatest(Base.display_error, Base.catch_stack())
+        return 1
+    end
+    return 0
+end
+
 
 end # module
