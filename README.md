@@ -115,6 +115,15 @@ julia> demo()
 
 # Appendix: build application via PackageCompiler.jl
 
+- Just Run
+
 ```console
 $ julia --project=. -e 'include("build.jl")'
+```
+
+which is equivalent to
+
+```
+julia -q --project=.
+julia> include("build.jl")
 ```
