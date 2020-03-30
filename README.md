@@ -112,3 +112,9 @@ $ julia -q --project=.
 julia> using CameraApp
 julia> demo()
 ```
+
+# Appendix: build application via PackageCompiler.jl
+
+```console
+$ julia --project=. -e 'include("build.jl")'
+```
