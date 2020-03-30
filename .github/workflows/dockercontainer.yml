@@ -9,5 +9,5 @@ jobs:
     name: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - run: docker --rm -it -v $PWD:/work -w /work julia julia --project=. -e 'using Pkg; Pkg.instantiate(); include("build.jl")'
+    - uses: actions/checkout@v1
+    - run: docker build -t jl . && docker --rm -it -v $PWD:/work -w /work julia julia --project=. -e 'using Pkg; Pkg.instantiate(); include("build.jl")'
