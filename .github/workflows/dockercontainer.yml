@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: docker build -t cameraapp . && docker run --rm -it -v $PWD:/work -w /work cameraapp julia --project=. -e 'using Pkg; Pkg.instantiate(); include("build.jl")'
+      - run: docker build -t cameraapp . && docker run --rm -i -v $PWD:/work -w /work cameraapp julia --project=. -e 'using Pkg; Pkg.instantiate(); include("build.jl")'
