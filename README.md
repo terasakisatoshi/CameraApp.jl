@@ -115,6 +115,21 @@ julia> demo()
 
 # Appendix: build application via PackageCompiler.jl
 
+- Just Run
+
 ```console
 $ julia --project=. -e 'include("build.jl")'
+```
+
+which is equivalent to
+
+```
+julia -q --project=.
+julia> include("build.jl")
+```
+
+# build via Docker
+
+```console
+$ docker run --rm -it -v $PWD:/work -w /work julia julia --project=. -e 'using Pkg; Pkg.instantiate(); include("build.jl")'
 ```
