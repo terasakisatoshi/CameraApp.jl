@@ -119,11 +119,14 @@ julia> demo()
 
 ```console
 $ julia --project=. -e 'include("build.jl")'
+$ ./build/bin/CameraApp
 ```
 
 which is equivalent to
 
-```
-julia -q --project=.
+```console
+$ julia -q --project=.
 julia> include("build.jl")
+julia> exit()
+$ ./build/bin/CameraApp
 ```
