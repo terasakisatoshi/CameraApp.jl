@@ -1,6 +1,9 @@
 # CameraApp.jl
 
 - Simple Terminal based Julian-application with web camera
+- First we take a picture from your web camera using VideoIO.jl, then display the result on your terminal using ImageInTerminal.jl. That's all it's so simple. Below is a result:
+
+![img](assets/top.png)
 
 ## Prerequisite
 
