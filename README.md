@@ -119,6 +119,7 @@ julia> demo()
 
 ```console
 $ julia --project=. -e 'include("build.jl")'
+$ ./build/bin/CameraApp
 ```
 
 which is equivalent to
@@ -126,4 +127,8 @@ which is equivalent to
 ```
 julia -q --project=.
 julia> include("build.jl")
+julia> exit()
+$ ./build/bin/CameraApp
 ```
+
+- We've confirmed it runs on macOS, Ubuntu18.04 and even RaspberryPi4
