@@ -1,3 +1,6 @@
+- Arm32/64 [![Build Status](https://cloud.drone.io/api/badges/terasakisatoshi/CameraApp.jl/status.svg)](https://cloud.drone.io/terasakisatoshi/CameraApp.jl)
+- x64 ![CI](https://github.com/terasakisatoshi/CameraApp.jl/workflows/CI/badge.svg?branch=master)
+
 # CameraApp.jl
 
 - Simple Terminal based Julian-application with web camera
