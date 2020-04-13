@@ -22,5 +22,5 @@ jobs:
         with:
           version: ${{ matrix.version }}
           arch: ${{ matrix.arch }}
-      #- run: julia --project=. -e 'using Pkg; Pkg.instantiate(); include("./build.jl")'
-      - run: bash build.sh
+      - run: julia --project=. -e 'using Pkg; Pkg.instantiate(); include("./build.jl")'
+
