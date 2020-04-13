@@ -9,6 +9,6 @@ PackageCompiler = "9b87118b-4619-50d2-8e1e-99f35a4d4d9d"
 VideoIO = "d6d074c3-1acf-5d4c-9a43-ef38773959a2"
 
 [compat]
+ImageInTerminal = "0.4"
 PackageCompiler = "1.1"
 VideoIO = "0.6"
-ImageInTerminal = "0.4"
