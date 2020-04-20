@@ -32,7 +32,7 @@ $ cd ~/work # path to your workspace
 $ cd CameraApp.jl
 $ ls
 LICENSE     Manifest.toml   Project.toml    README.md   README_ja.md    src
-$ julia --project=. -e "using Pkg; Pkg.instantiate()"
+$ julia --project=@. -e "using Pkg; Pkg.instantiate()"
   Updating registry at `~/.julia/registries/General`
   Updating git-repo `https://github.com/JuliaRegistries/General.git`
  Resolving package versions...
@@ -114,7 +114,7 @@ $ cd ~/work # path to your workspace
 $ cd CameraApp.jl
 $ ls
 LICENSE     Manifest.toml   Project.toml    README.md   README_ja.md    src
-$ julia -q --project=.
+$ julia -q --project=@.
 julia> using CameraApp
 julia> demo()
 ```
@@ -124,14 +124,14 @@ julia> demo()
 - Just Run
 
 ```console
-$ julia --project=. -e 'include("build.jl")'
+$ julia --project=@. -e 'include("build.jl")'
 $ ./build/bin/CameraApp
 ```
 
 which is equivalent to
 
 ```console
-$ julia -q --project=.
+$ julia -q --project=@.
 julia> include("build.jl")
 julia> exit()
 $ ./build/bin/CameraApp
