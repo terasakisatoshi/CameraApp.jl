@@ -1,7 +1,7 @@
 def main(ctx):
   pipelines = []
-  pipelines.append(pipeline("arm64", 1.4"))
-  pipelines.append(pipeline("arm", 1.4.1"))
+  pipelines.append(pipeline("arm64", "1.4"))
+  pipelines.append(pipeline("arm", "1.4.1"))
   return pipelines
 
 def pipeline(arch, julia):
